@@ -1,0 +1,13 @@
+<h1>Presidents Alphabetically in ascending order (A-Z)</h1>
+<br><br>
+<ul>
+  <li *ngFor="let president of asc$">
+    <h2>{{president.president}}</h2>
+    <ul>
+      <li>Birthday: {{president.birthday}}</li>
+      <li>Birth place: {{president.birthplace}}</li>
+      <li *ngIf="president.deathday">Death day: {{president.deathday}}</li>
+      <li *ngIf="president.deathplace">Death Place: {{president.deathplace}}</li>
+    </ul>
+  </li>
+</ul>
